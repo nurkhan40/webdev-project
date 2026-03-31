@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>CampusSync — Demo</title>
+    <style>
+      body{font-family:Arial,Helvetica,sans-serif;margin:20px}
+      section{margin-bottom:20px}
+      input,textarea{display:block;margin-top:8px;width:100%;max-width:480px}
+    </style>
+  </head>
+  <body>
+    <h1>CampusSync — Demo</h1>
+
+    <section>
+      <h2>Announcements</h2>
+      <div id="announcements"></div>
+      <input id="annTitle" placeholder="Title" />
+      <textarea id="annBody" placeholder="Body"></textarea>
+      <button id="postAnn">Post announcement</button>
+    </section>
+
+    <section>
+      <h2>Duty schedule</h2>
+      <div id="schedule"></div>
+      <input id="schedDate" placeholder="YYYY-MM-DD" />
+      <input id="schedPerson" placeholder="Person" />
+      <button id="postSched">Add schedule</button>
+    </section>
+
+    <section>
+      <h2>Reports</h2>
+      <div id="reports"></div>
+      <input id="repFrom" placeholder="From (name)" />
+      <input id="repTitle" placeholder="Title" />
+      <textarea id="repDesc" placeholder="Description"></textarea>
+      <button id="postReport">Submit report</button>
+    </section>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
